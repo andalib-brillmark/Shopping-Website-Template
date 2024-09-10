@@ -1,0 +1,359 @@
+/************ Roboto Font Import *************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/******** Poppin Font Import ***********/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+
+/********** General ***********/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+header
+{
+    margin: 10px;
+}
+
+/********** Navbar ***********/
+
+.navbar
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.navbar__title--img
+{
+    width: 31.26px;
+    height: 29px;
+    display: inline;
+}
+
+.navbar__title--text
+{
+    width: 192px;
+    height: 60px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+}
+
+.navbar li
+{
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar a
+{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #242323;
+    text-decoration: none;
+}
+
+.navbar__button--signup
+{
+    width: 134px;
+    height: 62px;
+    border-radius: 7px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #FEFEFE;
+    background-color: black;
+    cursor: pointer;
+}
+
+.navbar__button--mobile-nav
+{
+    display: none;
+    width: 31.26px;
+    height: 29px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 949px)
+{
+    .navbar__button--mobile-nav
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px)
+{
+    .navbar__button--mobile-nav
+    {
+        display: inline;
+    }
+
+    .navbar__links
+    {
+        display: none;
+    }
+
+    .navbar__title--text
+    {
+        text-align: center;
+    }
+}
+
+/********** Header Banner ***********/
+.header-banner
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F4F6F5;
+    border-radius: 59px;
+    margin: 10px;
+    padding: 20px 20px 0px 20px;
+}
+
+.header-banner__content
+{
+    width: 50%;
+    padding: 20px;
+}
+
+.header-banner__content--main-text
+{
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 120px;
+}
+
+.header-banner__content--sub-text
+{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.05em;
+    color: #191818;
+    margin: 20px 0;
+}
+
+.header-banner__picture
+{
+    position: relative;
+    width: 50%;
+}
+
+.header-banner__picture--main
+{
+    width: 100%;
+}
+
+.header-banner__picture--stars1
+{
+    position: absolute;
+    top: 1%;
+    left: 0;
+}
+
+.header-banner__picture--stars2
+{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+}
+
+.header-banner__picture--stars3
+{
+    position: absolute;
+    bottom: 2.5%;
+    left: 5%;
+}
+
+.header-banner__picture--stars4
+{
+    position: absolute;
+    bottom: 10%;
+    left: 90%;
+}
+
+.header-banner__content--text-bg1
+{
+    background-color: #FFF;
+    width: 464.74px;
+    height: 112.14px;
+    transform: rotate(-2deg);
+}
+
+.header-banner__content--text-bg2
+{
+    background-color: #E6C744;
+    width: 495.79px;
+    height: 117.55px;
+    transform: rotate(-2deg);
+}
+
+.header-banner__button
+{
+    width: 221px;
+    height: 82px;
+    border-radius: 10px;
+    
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: -0.05em;
+    color: #FEFEFE;
+    background-color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px)
+{
+    .header-banner
+    {
+        flex-direction: column-reverse;
+    }
+
+    .header-banner__content
+    {
+        width: 100%;
+    }
+}
+
+/********** Footer ***********/
+
+.footer
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+    padding: 50px;
+}
+
+.footer__details--name
+{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer__details--description
+{
+    color: #8E8E8E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    padding: 30px 0;
+}
+
+.footer__details--icons a
+{
+    padding: 0 10px;
+}
+
+.footer__details--icons a:first-child
+{
+    padding-left: 0;
+}
+
+.footer__details--icons a:last-child
+{
+    padding-right: 0;
+}
+
+.footer__links
+{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer__links div
+{
+    padding: 30px;
+}
+
+.footer__links--title
+{
+    color: #D9D9D9;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+}
+
+.footer__links a
+{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #8E8E8E;
+    text-decoration: none;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 950px)
+{
+    .footer
+    {
+        flex-direction: column;
+    }
+
+    .footer__details--name
+    {
+        text-align: center;
+    }
+
+    .footer__details--description
+    {
+        text-align: center;
+    }
+
+    .footer__details--icons
+    {
+        text-align: center;
+    }
+}
+
+/********** Brand ***********/

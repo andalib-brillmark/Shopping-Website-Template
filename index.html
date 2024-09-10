@@ -5,6 +5,8 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css">
+    <!-- <link rel="stylesheet" href="splide-4.1.3/dist/css/splide-core.min.css"> -->
     <link rel="stylesheet" href="style.css">
     <title>Fashion</title>
 </head>
@@ -18,10 +20,10 @@
 
             <nav class="navbar__links">
                 <ul>
-                    <li><a href="#">Catalog</a></li>
-                    <li><a href="#">Fashion</a></li>
-                    <li><a href="#">Favourite</a></li>
-                    <li><a href="#">Lifestyle</a></li>
+                    <li><a href="#">CATALOG</a></li>
+                    <li><a href="#">FASHION</a></li>
+                    <li><a href="#">FAVOURITE</a></li>
+                    <li><a href="#">LIFESTYLE</a></li>
                     <button class="navbar__button--signup">SIGN UP</button>
                 </ul>
             </nav>
@@ -51,7 +53,7 @@
                 <button class="header-banner__button">Shop Now</button>
             </div>
             <div class="header-banner__picture">
-                <img class="header-banner__picture--main" src="images/incendiary-fantastically-beautiful-girl-coat-eco-fur-moves-fun-picture-lovely-lady-pink-clothes-removebg-preview 1.png" alt="A Girl in Pink Fur Coat">
+                <img class="header-banner__picture--main" src="images/pink_fur_coat.png" alt="A Girl in Pink Fur Coat">
                 
                 <!-- For stars -->
                 <img class="header-banner__picture--stars1" src="images/silver_star.png" alt="Silver Star">
@@ -63,14 +65,102 @@
     </header>
 
     <main>
+        <!-- Static -->
         <section class="brand">
-            
+            <img src="images/h_and_m.png" alt="H&M">
+            <img src="images/obey.png" alt="Obey">
+            <img src="images/shopify.png" alt="Shopify">
+            <img src="images/lacoste.png" alt="Lacoste">
+            <img src="images/levis.png" alt="Levi's">
+            <img src="images/amazon.png" alt="Amazon">
+        </section>
+
+        <!-- Dynamic -->
+        <!-- <section class="brand-dynamic splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="images/h_and_m.png" alt="H&M"></li>
+                    <li class="splide__slide"><img src="images/obey.png" alt="Obey"></li>
+                    <li class="splide__slide"><img src="images/shopify.png" alt="Shopify"></li>
+                    <li class="splide__slide"><img src="images/lacoste.png" alt="Lacoste"></li>
+                    <li class="splide__slide"><img src="images/levis.png" alt="Levi's"></li>
+                    <li class="splide__slide"><img src="images/amazon.png" alt="Amazon"></li>
+                </ul>
+            </div>
+        </section> -->
+        
+
+        <section class="new-arrival">
+            <div class="new-arrival__heading">
+                <img class="new-arrival__heading--shade" src="images/Yellow Shade.png" alt="Rectangle">
+                <p class="new-arrival__heading--text">NEW ARRIVALS</p>
+            </div>
+
+            <div class="new-arrival__collection-list">
+                <div class="new-arrival__collection">
+                    <img src="images/orange_hoodie.png" alt="Hoodies & Sweetshirt">
+
+                    <div class="new-arrival__content">
+                        <div>
+                            <p class="new-arrival__content--main-text">Hoodies & Sweetshirt</p>
+                            <p class="new-arrival__content--sub-text">Explore Now!</p>
+                        </div>
+                        <img src="images/Arrow 1.png" alt="Arrow">
+                    </div>
+                </div>
+                
+                <div class="new-arrival__collection">
+                    <img src="images/girl_with_phone.png" alt="Coats & Parkas">
+
+                    <div class="new-arrival__content">
+                        <div>
+                            <p class="new-arrival__content--main-text">Coats & Parkas</p>
+                            <p class="new-arrival__content--sub-text">Explore Now!</p>
+                        </div>
+                        <img src="images/Arrow 1.png" alt="Arrow">
+                    </div>
+                </div>
+
+                <div class="new-arrival__collection">
+                    <img src="images/white_tshirt.png" alt="Tees & T-Shirt">
+
+                    <div class="new-arrival__content">
+                        <div>
+                            <p class="new-arrival__content--main-text">Tees & T-Shirt</p>
+                            <p class="new-arrival__content--sub-text">Explore Now!</p>
+                        </div>
+                        <img src="images/Arrow 1.png" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="payday">
+            <div class="payday__picture">
+                <img class="payday__picture--main" src="images/yellow_tshirt.png" alt="Payday Sale Now">
+
+                <!-- For stars -->
+                <img class="payday__picture--stars1" src="images/transparent_star.png" alt="Star">
+                <img class="payday__picture--stars2" src="images/transparent_star.png" alt="Star">
+                <img class="payday__picture--stars3" src="images/transparent_star.png" alt="Star">
+                <img class="payday__picture--stars4" src="images/transparent_star.png" alt="Star">
+            </div>
+            <div class="payday__content">
+                <div class="payday__content--text-bg">
+                    <img class="payday__content--bg" src="images/White Rectangle Payday.png" alt="White Rectangle">
+                    <p class="payday__content--heading">PAYDAY</p>
+                </div>
+                
+                <p class="payday__content--heading">SALE NOW</p>
+                
+                <p class="payday__content--description">Spend minimal $100 get 30% off voucher code for your next purchase</p>
+                <p class="payday__content--time-text">1 June - 10 June 2021</p>
+                <p class="payday__content--condition-text">*Terms & Conditions apply</p>
+
+                <button>SHOP NOW</button>
+            </div>
         </section>
         
-        <section class="new-arrival">
-
-        </section>
-        <section class="payday"></section>
         <section class="young-fav"></section>
         <section class="download"></section>
         <section class="community"></section>
@@ -119,6 +209,8 @@
         </section>
     </footer>
 
+    
+    <script src="splide-4.1.3/dist/js/splide.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

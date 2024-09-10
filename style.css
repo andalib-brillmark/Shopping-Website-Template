@@ -41,7 +41,7 @@ body
 
 header
 {
-    margin: 10px;
+    padding: 40px;
 }
 
 /********** Navbar ***********/
@@ -51,7 +51,6 @@ header
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 10px;
 }
 
 .navbar__title--img
@@ -110,7 +109,7 @@ header
     cursor: pointer;
 }
 
-@media screen and (min-width: 949px)
+@media screen and (min-width: 1003px)
 {
     .navbar__button--mobile-nav
     {
@@ -118,7 +117,7 @@ header
     }
 }
 
-@media screen and (max-width: 950px)
+@media screen and (max-width: 1002px)
 {
     .navbar__button--mobile-nav
     {
@@ -142,15 +141,15 @@ header
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: row;
     background-color: #F4F6F5;
     border-radius: 59px;
-    margin: 10px;
-    padding: 20px 20px 0px 20px;
+    margin-top: 10px;
 }
 
 .header-banner__content
 {
-    width: 50%;
+    max-width: 50%;
     padding: 20px;
 }
 
@@ -241,16 +240,16 @@ header
     cursor: pointer;
 }
 
-@media screen and (max-width: 950px)
+@media screen and (max-width: 1002px)
 {
     .header-banner
     {
         flex-direction: column-reverse;
     }
 
-    .header-banner__content
+    .header-banner__content, .header-banner__content--text-bg1, .header-banner__content--text-bg2, .header-banner__content--main-text
     {
-        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -262,7 +261,7 @@ header
     justify-content: space-evenly;
     align-items: center;
     background-color: #000;
-    padding: 50px;
+    padding: 40px;
 }
 
 .footer__details--name
@@ -283,6 +282,7 @@ header
     line-height: 40px;
     letter-spacing: 0.02em;
     padding: 30px 0;
+    width: 75%;
 }
 
 .footer__details--icons a
@@ -331,9 +331,11 @@ header
     color: #8E8E8E;
     text-decoration: none;
     padding: 20px 0;
+    width: 100%;
+    display: block;
 }
 
-@media screen and (max-width: 950px)
+@media screen and (max-width: 1002px)
 {
     .footer
     {
@@ -348,6 +350,7 @@ header
     .footer__details--description
     {
         text-align: center;
+        width: 100%;
     }
 
     .footer__details--icons
@@ -356,4 +359,251 @@ header
     }
 }
 
-/********** Brand ***********/
+/********** Brand (Static) ***********/
+.brand
+{
+    background-color: #EBD96B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+}
+
+@media screen and (max-width: 1002px)
+{
+    .brand
+    {
+        flex-direction: column;
+    }
+
+    .brand img
+    {
+        margin: 20px 0;
+        padding: 0px;
+    }
+}
+
+/****** Brand (Dynamic) ******/
+.brand-dynamic
+{
+    background-color: #EBD96B;
+    padding: 40px;
+}
+
+/********** New Arrivals ***********/
+
+.new-arrival__heading
+{
+    position: relative;
+    padding: 40px 40px 0px 40px;
+    /* display: flex; */
+}
+
+.new-arrival__heading--shade
+{
+    position: absolute;
+    z-index: -1;
+    /* top: 70%;
+    left: 30%; */
+    left: 260px;
+    top: 65px;
+}
+
+.new-arrival__heading--text
+{
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 50px;
+    letter-spacing: 0.06em;
+}
+
+.new-arrival__collection
+{
+    padding: 20px;
+}
+
+.new-arrival__collection > img
+{
+    max-width: 100%;
+    height: 100%;
+}
+
+.new-arrival__collection-list
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.new-arrival__content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-arrival__content--main-text
+{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -0.04em;
+    color: #191919;
+}
+
+.new-arrival__content--sub-text
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -0.04em;
+    color: #7F7F7F;
+}
+
+@media screen and (max-width: 1002px)
+{
+    .new-arrival__collection-list
+    {
+        flex-direction: column;
+    }
+
+    /* .new-arrival__heading
+    {
+        justify-content: center;
+        align-items: center;
+    } */
+}
+
+/********** Payday ***********/
+.payday
+{
+    background-image: linear-gradient(1.32deg, #E0C340 0.13%, #DFC23E 3.97%, #E1C441 7.2%, #E3C743 10.13%, #E4C542 12.98%, #E6C744 15.99%, #E7C845 19.52%, #E5C643 23.96%, #E6C945 30.43%, #E3C743 36.49%, #E9CA48 42.49%, #EDCE49 49.35%, #F0D44C 55.42%, #F4D84F 61.43%, #F6DA52 65.74%, #F7DB53 72.23%, #F9DD55 77.43%, #F9DF56 83.84%, #FAE157 91.52%, #F9DF56 97.87%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.payday__content
+{
+    max-width: 50%;
+    padding: 40px;
+}
+
+.payday__content--text-bg
+{
+    position: relative;
+    z-index: 2;
+}
+
+.payday__content--bg
+{
+    position: absolute;
+    z-index: -1;
+    left: -2.5%;
+    top: -1%;
+}
+
+.payday__content--heading
+{
+    font-size: 111.61px;
+    font-weight: 900;
+    line-height: 137.19px;
+    color: #000000;
+}
+
+.payday__content--description
+{
+    font-size: 36.04px;
+    font-weight: 500;
+    line-height: 52.32px;
+    letter-spacing: -0.02em;
+    color: #231300;
+    padding: 30px 0;
+}
+
+.payday__content--time-text
+{
+    font-size: 36.04px;
+    font-weight: 700;
+    line-height: 52.32px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.payday__content--condition-text
+{
+    font-size: 36.04px;
+    font-weight: 400;
+    line-height: 52.32px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    padding: 0 0 30px 0;
+}
+
+.payday__picture
+{
+    position: relative;
+    max-width: 50%;
+}
+
+.payday__picture--main
+{
+    width: 100%;
+}
+
+.payday__picture--stars1
+{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.payday__picture--stars2
+{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+}
+
+.payday__picture--stars3
+{
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+}
+
+.payday__picture--stars4
+{
+    position: absolute;
+    bottom: 25%;
+    left: 80%;
+}
+
+.payday button
+{
+    width: 265.62px;
+    height: 95.33px;
+    border-radius: 8.14px;
+    font-size: 27.9px;
+    font-weight: 600;
+    line-height: 41.85px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background: #000000;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1002px)
+{
+    .payday
+    {
+        padding: 40px;
+        flex-direction: column;
+    }
+
+    .payday__content
+    {
+        max-width: 100%;   
+    }
+}

@@ -49,8 +49,9 @@ header
 .navbar
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 0 30px 0;
 }
 
 .navbar__title--img
@@ -62,8 +63,7 @@ header
 
 .navbar__title--text
 {
-    width: 192px;
-    height: 60px;
+    
     font-size: 40px;
     font-weight: 900;
     line-height: 60px;
@@ -119,6 +119,10 @@ header
 
 @media screen and (max-width: 1002px)
 {
+    .navbar
+    {
+        justify-content: center;
+    }
     .navbar__button--mobile-nav
     {
         display: inline;
@@ -145,17 +149,20 @@ header
     background-color: #F4F6F5;
     border-radius: 59px;
     margin-top: 10px;
+    padding: 40px;
 }
 
 .header-banner__content
 {
     max-width: 50%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-banner__content--main-text
 {
-    font-size: 96px;
+    font-size: 8vw;
     font-weight: 900;
     line-height: 120px;
 }
@@ -209,19 +216,47 @@ header
     left: 90%;
 }
 
-.header-banner__content--text-bg1
+.header-banner__content--text-bg1, .header-banner__content--text-bg2
 {
+    position: relative;
+    z-index: 2;
+}
+
+.header-banner__content--text-bg1::before
+{
+    content: '';
+    background-color: transparent;
+}
+
+.header-banner__content--text-bg1::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-color: #FFF;
-    width: 464.74px;
-    height: 112.14px;
     transform: rotate(-2deg);
 }
 
-.header-banner__content--text-bg2
+.header-banner__content--text-bg2::before
 {
+    content: '';
+    background-color: transparent;
+}
+
+.header-banner__content--text-bg2::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-color: #E6C744;
-    width: 495.79px;
-    height: 117.55px;
     transform: rotate(-2deg);
 }
 
@@ -247,9 +282,45 @@ header
         flex-direction: column-reverse;
     }
 
-    .header-banner__content, .header-banner__content--text-bg1, .header-banner__content--text-bg2, .header-banner__content--main-text
+    .header-banner__content, .header-banner__content--main-text, .header-banner__button
     {
         max-width: 100%;
+    }
+
+    .header-banner__content--sub-text
+    {
+        text-align: center;
+    }
+
+    .header-banner__content
+    {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-banner__picture
+    {
+        width: 100%;
+    }
+
+    .header-banner__picture--stars1, .header-banner__picture--stars2, .header-banner__picture--stars3, .header-banner__picture--stars4
+    {
+        width: 10%;
+    }
+
+    .header-banner__content--main-text
+    {
+        line-height: 60px;
+    }
+
+    .header-banner__content--sub-text
+    {
+        font-size: 24px;
+    }
+
+    .header-banner__button
+    {
+        font-size: 24px;
     }
 }
 
@@ -258,7 +329,7 @@ header
 .footer
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: #000;
     padding: 40px;
@@ -284,6 +355,13 @@ header
     padding: 30px 0;
     width: 75%;
 }
+
+/* .footer__details--icons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
 
 .footer__details--icons a
 {
@@ -320,6 +398,7 @@ header
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0.02em;
+    padding: 20px 0;
 }
 
 .footer__links a
@@ -333,6 +412,11 @@ header
     padding: 20px 0;
     width: 100%;
     display: block;
+}
+
+.footer__links a:hover
+{
+    color: #D9D9D9;
 }
 
 @media screen and (max-width: 1002px)
@@ -355,6 +439,14 @@ header
 
     .footer__details--icons
     {
+        text-align: center;
+    }
+
+    .footer__links
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 }
@@ -392,6 +484,14 @@ header
 
 /********** New Arrivals ***********/
 
+.new-arrival
+{
+    display: flex;
+    flex-direction: column;
+    
+    /* padding: 40px; */
+}
+
 .new-arrival__heading
 {
     position: relative;
@@ -403,15 +503,15 @@ header
 {
     position: absolute;
     z-index: -1;
-    /* top: 70%;
-    left: 30%; */
-    left: 260px;
-    top: 65px;
+    top: 55%;
+    left: 8%;
+    /* left: 260px;
+    top: 65px; */
 }
 
 .new-arrival__heading--text
 {
-    font-size: 48px;
+    font-size: 2vw;
     font-weight: 900;
     line-height: 50px;
     letter-spacing: 0.06em;
@@ -431,7 +531,7 @@ header
 .new-arrival__collection-list
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
@@ -463,9 +563,41 @@ header
 
 @media screen and (max-width: 1002px)
 {
+    .new-arrival
+    {
+        justify-content: center;
+        align-items: center;
+    }
+
     .new-arrival__collection-list
     {
         flex-direction: column;
+    }
+
+    .new-arrival__heading--text
+    {
+        font-size: 5vw;
+    }
+
+    .new-arrival__content--main-text
+    {
+        font-size: 24px;
+    }
+
+    .new-arrival__content--sub-text
+    {
+        font-size: 18px;
+    }
+
+    .new-arrival__heading--shade
+    {
+        width: 30%;
+    }
+
+    .new-arrival__heading--shade
+    {
+        top: 70%;
+        left: 60%;
     }
 
     /* .new-arrival__heading
@@ -480,7 +612,7 @@ header
 {
     background-image: linear-gradient(1.32deg, #E0C340 0.13%, #DFC23E 3.97%, #E1C441 7.2%, #E3C743 10.13%, #E4C542 12.98%, #E6C744 15.99%, #E7C845 19.52%, #E5C643 23.96%, #E6C945 30.43%, #E3C743 36.49%, #E9CA48 42.49%, #EDCE49 49.35%, #F0D44C 55.42%, #F4D84F 61.43%, #F6DA52 65.74%, #F7DB53 72.23%, #F9DD55 77.43%, #F9DF56 83.84%, #FAE157 91.52%, #F9DF56 97.87%);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -488,6 +620,8 @@ header
 {
     max-width: 50%;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .payday__content--text-bg
@@ -496,17 +630,37 @@ header
     z-index: 2;
 }
 
+.payday__content--text-bg::before
+{
+    content: '';
+    background-color: transparent;
+}
+
+.payday__content--text-bg::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #FFF;
+    transform: rotate(-2deg);
+}
+
 .payday__content--bg
 {
     position: absolute;
     z-index: -1;
     left: -2.5%;
     top: -1%;
+    width: 100%;
 }
 
 .payday__content--heading
 {
-    font-size: 111.61px;
+    font-size: 8vw;
     font-weight: 900;
     line-height: 137.19px;
     color: #000000;
@@ -584,6 +738,7 @@ header
 {
     width: 265.62px;
     height: 95.33px;
+    max-width: 100%;
     border-radius: 8.14px;
     font-size: 27.9px;
     font-weight: 600;
@@ -598,12 +753,44 @@ header
 {
     .payday
     {
-        padding: 40px;
         flex-direction: column;
+    }
+
+    .payday__content, .payday__picture
+    {
+        max-width: 100%;   
     }
 
     .payday__content
     {
-        max-width: 100%;   
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .payday__content--description, .payday__content--time-text, .payday__content--condition-text
+    {
+        font-size: 24px;
+    }
+
+    .payday__picture--stars1, .payday__picture--stars2, .payday__picture--stars3, .payday__picture--stars4
+    {
+        width: 10%;
+    }
+
+    .payday--picture--main
+    {
+        width: 100%;
+    }
+
+    .payday button
+    {
+        max-width: 100%;
+        font-size: 24px;
+    }
+
+    .payday__content--heading
+    {
+        line-height: 68px;
     }
 }

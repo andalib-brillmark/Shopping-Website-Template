@@ -52,7 +52,6 @@ header
     justify-content: space-between;
     align-items: center;
     padding: 0 0 30px 0;
-    position: relative;
 }
 
 .navbar__title--img
@@ -78,7 +77,7 @@ header
 
 .navbar a
 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 33px;
     letter-spacing: 0.01em;
@@ -89,13 +88,12 @@ header
 
 .navbar__button--signup
 {
-    width: 134px;
-    height: 62px;
+    width: 130px;
+    height: auto;
     border-radius: 7px;
     font-size: 22px;
     font-weight: 500;
-    line-height: 36px;
-    letter-spacing: -0.03em;
+    padding: 10px;
     color: #FEFEFE;
     background-color: black;
     cursor: pointer;
@@ -105,7 +103,7 @@ header
 {
     display: none;
     width: 31.26px;
-    height: 100%;
+    height: auto;
     background-color: transparent;
     border: none;
     font-size: 24px;
@@ -117,12 +115,43 @@ header
     display: none;
 }
 
-@media screen and (max-width: 1002px)
+@media screen and (max-width: 990px)
+{
+    .navbar__title--text
+    {
+        font-size: 24px;
+    }
+
+    .navbar__title--logo
+    {
+        height: 18px;
+    }
+
+    .navbar a
+    {
+        font-size: 16px;
+    }
+
+    .navbar__button--signup
+    {
+        font-size: 18px;
+        width: 100px;
+    }
+
+    .navbar li
+    {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px)
 {
     .navbar
     {
         justify-content: space-between;
+        position: relative;
     }
+
     .navbar__button--mobile-nav
     {
         display: inline;
@@ -144,10 +173,7 @@ header
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        width: 50%;
+        width: 100%;
         background-color: #F4F6F5;
         border: 1px solid #D9D9D9;
         z-index: 1;
@@ -159,6 +185,18 @@ header
         width: 100%;
         border: 1px solid #D9D9D9;
         text-align: center;
+        list-style: none;
+    }
+
+    .navbar__mobile-view--active ul:last-child
+    {
+        border: none;
+    }
+
+    .navbar__mobile-view--active a
+    {
+        text-decoration: none;
+        color: #242323;
     }
 
     .navbar a
@@ -219,6 +257,11 @@ header
 .header-banner__picture--main
 {
     width: 100%;
+}
+
+.header-banner__picture--stars1, .header-banner__picture--stars2, .header-banner__picture--stars3, .header-banner__picture--stars4
+{
+    width: 10%;
 }
 
 .header-banner__picture--stars1
@@ -308,7 +351,7 @@ header
     cursor: pointer;
 }
 
-@media screen and (max-width: 1002px)
+@media screen and (max-width: 768px)
 {
     .header-banner
     {
@@ -335,11 +378,6 @@ header
     .header-banner__picture
     {
         width: 100%;
-    }
-
-    .header-banner__picture--stars1, .header-banner__picture--stars2, .header-banner__picture--stars3, .header-banner__picture--stars4
-    {
-        width: 10%;
     }
 
     .header-banner__content--sub-text
@@ -448,7 +486,7 @@ header
     color: #D9D9D9;
 }
 
-@media screen and (max-width: 1002px)
+@media screen and (max-width: 768px)
 {
     .footer
     {
@@ -485,12 +523,17 @@ header
 {
     background-color: #EBD96B;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 40px;
 }
 
-@media screen and (max-width: 1002px)
+.brand img
+{
+    width: 16.67%;
+}
+
+@media screen and (max-width: 768px)
 {
     .brand
     {
@@ -501,6 +544,7 @@ header
     {
         margin: 20px 0;
         padding: 0px;
+        width: 119px;
     }
 }
 
@@ -590,7 +634,7 @@ header
     color: #7F7F7F;
 }
 
-@media screen and (max-width: 1002px)
+@media screen and (max-width: 768px)
 {
     .new-arrival
     {
@@ -777,7 +821,7 @@ header
     cursor: pointer;
 }
 
-@media screen and (max-width: 1002px)
+@media screen and (max-width: 768px)
 {
     .payday
     {
@@ -798,7 +842,7 @@ header
 
     .payday__content--description, .payday__content--time-text, .payday__content--condition-text
     {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .payday__picture--stars1, .payday__picture--stars2, .payday__picture--stars3, .payday__picture--stars4
@@ -814,7 +858,7 @@ header
     .payday button
     {
         max-width: 100%;
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .payday__content--text-bg::after

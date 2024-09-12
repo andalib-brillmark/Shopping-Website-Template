@@ -52,6 +52,7 @@ header
     justify-content: space-between;
     align-items: center;
     padding: 0 0 30px 0;
+    position: relative;
 }
 
 .navbar__title--img
@@ -63,7 +64,6 @@ header
 
 .navbar__title--text
 {
-    
     font-size: 40px;
     font-weight: 900;
     line-height: 60px;
@@ -105,8 +105,31 @@ header
 {
     display: none;
     width: 31.26px;
-    height: 29px;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #D9D9D9;
+    font-size: 24px;
     cursor: pointer;
+}
+
+.navbar__mobile-view--inactive
+{
+    display: none;
+}
+
+.nabar__mobile-view--active
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F4F6F5;
+    z-index: 1;
 }
 
 @media screen and (min-width: 1003px)
@@ -121,7 +144,7 @@ header
 {
     .navbar
     {
-        justify-content: center;
+        justify-content: space-between;
     }
     .navbar__button--mobile-nav
     {
@@ -781,5 +804,10 @@ header
     {
         max-width: 100%;
         font-size: 24px;
+    }
+
+    .payday__content--text-bg::after
+    {
+        width: 100%;
     }
 }

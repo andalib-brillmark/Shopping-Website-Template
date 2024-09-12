@@ -162,9 +162,8 @@ header
 
 .header-banner__content--main-text
 {
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: 900;
-    line-height: 120px;
 }
 
 .header-banner__content--sub-text
@@ -282,7 +281,7 @@ header
         flex-direction: column-reverse;
     }
 
-    .header-banner__content, .header-banner__content--main-text, .header-banner__button
+    .header-banner__button
     {
         max-width: 100%;
     }
@@ -296,6 +295,7 @@ header
     {
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .header-banner__picture
@@ -306,11 +306,6 @@ header
     .header-banner__picture--stars1, .header-banner__picture--stars2, .header-banner__picture--stars3, .header-banner__picture--stars4
     {
         width: 10%;
-    }
-
-    .header-banner__content--main-text
-    {
-        line-height: 60px;
     }
 
     .header-banner__content--sub-text
@@ -642,7 +637,7 @@ header
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 75%;
     height: 100%;
     z-index: -1;
     background-color: #FFF;
@@ -660,9 +655,8 @@ header
 
 .payday__content--heading
 {
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: 900;
-    line-height: 137.19px;
     color: #000000;
 }
 
@@ -787,10 +781,5 @@ header
     {
         max-width: 100%;
         font-size: 24px;
-    }
-
-    .payday__content--heading
-    {
-        line-height: 68px;
     }
 }

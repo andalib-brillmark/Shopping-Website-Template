@@ -235,7 +235,6 @@ header
 .header-banner__content
 {
     width: 50%;
-    
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -651,8 +650,6 @@ header
 {
     font-size: 32px;
     font-weight: 500;
-    line-height: 50px;
-    letter-spacing: -0.04em;
     color: #191919;
 }
 
@@ -660,8 +657,6 @@ header
 {
     font-size: 24px;
     font-weight: 500;
-    line-height: 50px;
-    letter-spacing: -0.04em;
     color: #7F7F7F;
 }
 
@@ -690,23 +685,23 @@ header
 
     .new-arrival__content--main-text
     {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .new-arrival__content--sub-text
     {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .new-arrival__heading--shade
     {
-        width: 30%;
+        width: 50%;
     }
 
     .new-arrival__heading--shade
     {
-        top: 70%;
-        left: 60%;
+        top: 60%;
+        left: 45%;
     }
 
     /* .new-arrival__heading
@@ -778,8 +773,6 @@ header
 {
     font-size: 36.04px;
     font-weight: 500;
-    line-height: 52.32px;
-    letter-spacing: -0.02em;
     color: #231300;
     padding: 30px 0;
 }
@@ -789,7 +782,6 @@ header
     font-size: 36.04px;
     font-weight: 700;
     line-height: 52.32px;
-    letter-spacing: 0.02em;
     color: #000000;
 }
 
@@ -797,8 +789,6 @@ header
 {
     font-size: 36.04px;
     font-weight: 400;
-    line-height: 52.32px;
-    letter-spacing: -0.02em;
     color: #000000;
     padding: 0 0 30px 0;
 }

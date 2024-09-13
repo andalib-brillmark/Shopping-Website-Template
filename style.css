@@ -863,9 +863,55 @@ header
     align-items: center;
 }
 
+.download-app__picture
+{
+    position: relative;
+    width: 50%;
+}
+
 .download-app__picture--main
 {
     width: 100%;
+}
+
+.download-app__picture--dot1, .download-app__picture--dot2, .download-app__picture--dot3, .download-app__picture--dot4
+{
+    position: absolute;
+}
+
+.download-app__picture--dot1
+{
+    width: 22px;
+    height: 24px;
+    background-color: #89807A;
+    border-radius: 50%;
+    top: 17%;
+}
+
+.download-app__picture--dot2
+{
+    width: 50px;
+    height: 50px;
+    background-color: #EBD96B;
+    border-radius: 50%;
+    top: 16%;
+    right: -5%;
+}
+
+.download-app__picture--dot3
+{
+    width: 34px;
+    height: 34px;
+    background-color: #EBD96B;
+    border-radius: 50%;
+}
+
+.download-app__picture--dot4
+{
+    width: 17px;
+    height: 17px;
+    background-color: #89807A;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 990px)
@@ -901,6 +947,12 @@ header
     {
         justify-content: space-evenly;
     }
+
+    .download-app__picture--dot2
+    {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media screen and (max-width: 768px)
@@ -930,6 +982,7 @@ header
     .download-app__content--buttons img
     {
         margin: 10px 0;
+        max-width: 30%;
     }
 }
 
@@ -1087,9 +1140,9 @@ header
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-color: #000;
-    padding: 40px;
+    padding: 60px 40px;
 }
 
 .footer__details--name
@@ -1142,7 +1195,7 @@ header
 
 .footer__links div
 {
-    padding: 30px;
+    padding: 0 30px;
 }
 
 .footer__links--title
@@ -1150,7 +1203,7 @@ header
     color: #D9D9D9;
     font-size: 24px;
     font-weight: 400;
-    padding: 20px 0;
+    padding: 0 0 20px 0;
 }
 
 .footer__links a
@@ -1174,6 +1227,7 @@ header
     .footer
     {
         flex-direction: column;
+        align-items: center;
     }
 
     .footer__details--name
@@ -1211,5 +1265,15 @@ header
     .footer__links--title, .footer__links a
     {
         font-size: 18px;
+    }
+
+    .footer__links div
+    {
+        padding: 20px 0;
+    }
+
+    .footer__links--title
+    {
+        padding: 20px 0;
     }
 }

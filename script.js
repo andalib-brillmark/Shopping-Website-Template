@@ -1,17 +1,22 @@
-// import Splide from '@splidejs/splide';
-// new Splide( '.splide' ).mount();
-// new Splide('.splide', {
-//     type       : 'loop',
-//     perPage    : 3,
-//     perMove    : 1,
-//     focus      : 'center',
-//     pagination : false,
-//     breakpoints: {
-//         950: {
-//             perPage: 1,
-//         }
-//     }
-// }).mount();
+document.addEventListener("DOMContentLoaded", function (e) {
+    new Splide('.splide', {
+        type       : 'loop',
+        perPage    : 6,
+        perMove    : 1,
+        pagination : false,
+        breakpoints: {
+            990: {
+                perPage: 4,
+            },
+    
+            768: {
+                perPage: 2,
+            }
+        }
+    }).mount();
+});
+
+
 
 let clickCount = 0;
 document.querySelector(".navbar__button--mobile-nav").addEventListener("click", function (e) {

@@ -935,10 +935,16 @@ header
 
 @media screen and (max-width: 560px)
 {
+    .community
+    {
+        padding: 40px;
+    }
+
     .community__input
     {
         position: static;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-self: center;
     }

@@ -1,3 +1,4 @@
+///////////////// Brand Slider ///////////////////
 document.addEventListener("DOMContentLoaded", function (e) {
     new Splide('.splide', {
         type       : 'loop',
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 
 
+////////////////////// Mobile Menu ///////////////////////////
 let clickCount = 0;
 document.querySelector(".navbar__button--mobile-nav").addEventListener("click", function (e) {
     console.log("Hello");
@@ -26,7 +28,7 @@ document.querySelector(".navbar__button--mobile-nav").addEventListener("click", 
     document.querySelector(".navbar__mobile-view").classList.toggle("navbar__mobile-view--inactive");
 });
 
-
+//////////////////// When window is resized with menu open  ////////////////////
 window.addEventListener("resize", function (e) {
     let width = window.innerWidth;
     console.log(width);

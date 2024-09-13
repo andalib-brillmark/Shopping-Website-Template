@@ -828,10 +828,11 @@ header
 .community
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 40px;
+    padding-bottom: 150px;
     background-color: #E5C643;
 }
 
@@ -841,7 +842,7 @@ header
     font-weight: 900;
     text-align: center;
     color: #FFFFFF;
-    width: 50%;
+    width: 60%;
 }
 
 .community__heading--sub-text
@@ -850,11 +851,72 @@ header
     font-weight: 400;
     text-align: center;
     color: #FFFFFF;
+    padding: 20px 0;
+}
+
+.community__input
+{
+    position: relative;
+    /* display: inline-block; */
+    width: 100%;
+}
+
+.community__input--field
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    width: 45%;
+    height: auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFF;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+.community__input--field::placeholder
+{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    color: #767676;
+}
+
+.community__input--button
+{
+    width: 10%;
+    height: auto;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(210%, 10%);
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 990px)
 {
-    
+    .community__input--field
+    {
+        width: 60%;
+    }
+
+    .community__input--button
+    {
+        font-size: 16px;
+        width: 15%;
+        transform: translate(190%, 20%);
+    }
 }
 
 @media screen and (max-width: 768px)
@@ -863,6 +925,41 @@ header
     {
         font-size: 24px;
         width: 100%;
+    }
+
+    .community__input--field::placeholder
+    {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 560px)
+{
+    .community__input
+    {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+    }
+
+    .community__input--field, .community__input--button
+    {
+        position: static;
+        transform: translate(0, 0);
+    }
+    
+    .community__input--field
+    {
+        width: 100%;
+    }
+
+    .community__input--button
+    {
+        width: 30%;
+        max-height: 60px;
+        align-self: center;
+        margin: 5px;
     }
 }
 

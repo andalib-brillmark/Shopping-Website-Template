@@ -768,7 +768,7 @@ header
     {
         font-size: 18px;
         width: 200px;
-        height: 70px;
+        /* height: 70px; */
     }
 
     .payday__picture--stars1, .payday__picture--stars2, .payday__picture--stars3, .payday__picture--stars4
@@ -809,7 +809,8 @@ header
     .payday button
     {
         max-width: 100%;
-        font-size: 18px;
+        font-size: 16px;
+        padding: 15px;
     }
 
     .payday__content--text-bg::after
@@ -1123,6 +1124,7 @@ header
     .community__input--field
     {
         width: 100%;
+        padding: 15px;
     }
 
     .community__input--button

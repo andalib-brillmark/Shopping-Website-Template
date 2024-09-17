@@ -853,7 +853,8 @@ header
     font-weight: 500;
     text-align: left;
     color: #7C7C7C;
-    padding: 20px 0;
+    padding: 35px 0;
+    width: 80%;
 }
 
 .download-app__content--buttons
@@ -862,6 +863,23 @@ header
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.download-app__content--buttons img
+{
+    width: 30%;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.download-app__content--buttons img:first-child
+{
+    padding-left: 0;
+}
+
+.download-app__content--buttons img:last-child
+{
+    padding-right: 0;
 }
 
 .download-app__picture
@@ -873,6 +891,8 @@ header
 .download-app__picture--main
 {
     width: 100%;
+    max-height: 700px;
+    object-fit: contain;
 }
 
 .download-app__picture--dot1, .download-app__picture--dot2, .download-app__picture--dot3, .download-app__picture--dot4
@@ -949,6 +969,11 @@ header
         justify-content: space-evenly;
     }
 
+    .download-app__content--buttons img
+    {
+        padding: 0;
+    }
+
     .download-app__picture--dot2
     {
         width: 30px;
@@ -971,6 +996,7 @@ header
     .download-app__content--sub-text
     {
         width: 80%;
+        padding: 25px 0;
     }
 
     .download-app__content--buttons
